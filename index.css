@@ -1,0 +1,19 @@
+#headerinfo {
+    text-align: center;
+}
+
+#entryform {
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#quote {
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: lightblue;
+}

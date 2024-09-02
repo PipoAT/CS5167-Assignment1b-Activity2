@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goal Tracking and Journaling</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="headerinfo">
+        <h1>Welcome, Andrew Pipo!</h1>
+        <div id="quote">
+            <p>"Nothing is impossible, the word itself says 'I'm possible'." - Audrey Hepburn</p>
+        </div>
+        <br>
+    </div>
+    <div id="entryform">
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <br>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+            <br>
+            <br>
+            <label for="journal">Journal:</label>
+            <textarea id="journal" name="journal" required></textarea>
+            <br>
+            <br>
+            <label for="sleep">Amount of sleep you got (in hours):</label>
+            <input type="text" id="sleep" name="sleep" required>
+            <br>
+            <br>
+            <label for="feeling">How did you feel today:</label>
+            <br>
+            <input type="checkbox" id="energetic" name="feeling" value="energetic">
+            <label for="energetic"> Energetic</label>
+            <br>
+            <input type="checkbox" id="anxious" name="feeling" value="anxious">
+            <label for="anxious"> Anxious</label>
+            <br>
+            <input type="checkbox" id="motivated" name="feeling" value="motivated">
+            <label for="motivated"> Motivated</label>
+            <br>
+            <input type="checkbox" id="happy" name="feeling" value="happy">
+            <label for="happy"> Happy</label>
+            <br>
+            <input type="checkbox" id="depressed" name="feeling" value="depressed">
+            <label for="depressed"> Depressed</label>
+            <br>
+            <input type="checkbox" id="indifferent" name="feeling" value="indifferent">
+            <label for="indifferent"> Indifferent</label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <br>
+    <style>
+        #journal-streak,
+        #sleep-data,
+        #mood-data {
+            display: inline-block;
+            width: calc(33.33% - 20px);
+            text-align: center;
+        }
+    </style>
+
+    <div id="journal-streak">
+        <h1>Journal Streak</h1>
+        <svg height="200" width="200">
+            <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="lightgreen" />
+            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle">5 Days</text>
+        </svg>
+    </div>
+    <div id="sleep-data">
+        <h1>Average Sleep</h1>
+        <svg height="200" width="200">
+            <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="pink" />
+            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle">2 Hours</text>
+        </svg>
+    </div> 
+
+    <div id="mood-data">
+        <h1>Current Mood</h1>
+        <svg height="200" width="200">
+            <circle cx="100" cy="100" r="80" stroke="black" stroke-width="3" fill="lightblue" />
+            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle"></text>
+        </svg>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
